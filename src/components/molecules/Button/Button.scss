@@ -1,0 +1,16 @@
+@import "../../../utils/index";
+
+.button {
+  width: 320px;
+  background-color: $primary;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  @include text(18px, 500, $white, 20px);
+}

@@ -1,0 +1,12 @@
+@import "utils/index.scss";
+
+.root {
+  background-color: $background;
+  width: 100%;
+  height: 100vh;
+}
+
+.pages {
+  height: 100%;
+  display: flex;
+}

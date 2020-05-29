@@ -1,0 +1,6 @@
+@import "../../../utils/index";
+
+.group-label {
+  @include text(18px, 500, $black, 21px);
+  margin-bottom: 15px;
+}

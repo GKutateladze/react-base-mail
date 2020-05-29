@@ -1,0 +1,31 @@
+@import "../../../utils/index";
+
+.message-header {
+  display: flex;
+  align-items: center;
+}
+
+.message-options {
+  display: flex;
+  margin-left: auto;
+}
+
+.message-time {
+  margin-right: 20px;
+  @include text(16px, 400, $textColor, 19px);
+}
+
+.message__article {
+  margin-top: 30px;
+}
+
+.message__article-title {
+  @include text(30px, 700, $black, 30px);
+}
+
+.message__article-body {
+  white-space: pre-wrap;
+  font-family: Roboto;
+  margin: 20px 0;
+  @include text(22px, 400, $black, 26px);
+}

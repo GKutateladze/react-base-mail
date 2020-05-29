@@ -1,0 +1,50 @@
+@import "../../../utils/index";
+
+.message__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.message__status {
+  background-color: $primary;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+  display: none;
+}
+
+.message__status.unread {
+  display: block;
+}
+
+.message__header-info {
+  margin-left: 15px;
+}
+
+.header__attachment {
+  margin-left: 5px;
+  svg {
+    height: 1.2em;
+    width: 1.2em;
+  }
+}
+
+.header__from {
+  margin-bottom: 5px;
+  @include text(18px, 700, $black, 21px);
+}
+
+.header__from.unread {
+  color: $primary;
+}
+
+.header__subtext {
+  display: flex;
+  align-items: center;
+  @include text(16px, 400, $textColor, 19px);
+}

@@ -1,0 +1,18 @@
+@import "../../../utils/index";
+
+.input {
+  @include text(18px, 500, $black, 20px);
+  width: 320px;
+  border: 2px solid $borderColor;
+  border-radius: 10px;
+  padding: 20px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: $primary;
+}
+
+.input.invalid {
+  border-color: crimson;
+}

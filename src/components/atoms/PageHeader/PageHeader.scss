@@ -1,0 +1,6 @@
+@import "../../../utils/index";
+
+.page-header {
+  @include text(30px, 500, $black, 24px);
+  margin-bottom: 30px;
+}

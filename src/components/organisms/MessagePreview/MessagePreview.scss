@@ -1,0 +1,62 @@
+@import "../../../utils/index";
+
+.message__preview {
+  display: block;
+  padding-top: 20px;
+  position: relative;
+}
+
+.message__content {
+  position: relative;
+  z-index: 2;
+}
+
+.message__preview.active:before{
+  content: '';
+  display: block;
+  width: calc(100% + 40px);
+  height: 100%;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $secondary;
+  margin: 0 -20px;
+  z-index: 1;
+}
+
+.message__preview.active .profile__icon {
+  background-color: $white;
+}
+
+.message__preview-article {
+  margin-top: 10px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message__preview-title {
+  @include text(16px, 500, $black, 19px);
+}
+
+.message__preview-body {
+  margin-top: 5px;
+  @include text(16px, 400, $textColor, 19px);
+}
+
+.message__preview:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: calc(100% + 40px);
+  background-color: $borderColorLight;
+  margin-top: 20px;
+}
+
+.message__preview:last-of-type:after {
+  display: none;
+}
+

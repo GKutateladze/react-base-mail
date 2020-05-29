@@ -1,0 +1,10 @@
+@import "../../../utils/index";
+
+.priority-flag {
+  color: $textColor;
+}
+
+.priority-flag.active {
+  color: $accent;
+}
+

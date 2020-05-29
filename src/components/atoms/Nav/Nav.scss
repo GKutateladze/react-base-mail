@@ -1,0 +1,34 @@
+@import "../../../utils/index";
+
+.nav {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.nav:last-of-type {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.nav.active {
+  background-color: $primary;
+}
+
+.nav__icon {
+  color: $white;
+}
+
+.nav__label {
+  @include text(13px, 400, $textColor, 15px)
+}
+
+.nav.active .nav__label {
+  color: $white;
+}

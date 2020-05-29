@@ -1,0 +1,12 @@
+@import "../../../utils/index";
+
+.profile__icon {
+  width: 50px;
+  height: 50px;
+  background-color: $secondary;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include text(18px, 700, $forest, 21px);
+}
